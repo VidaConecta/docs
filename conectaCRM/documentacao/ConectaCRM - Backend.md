@@ -5,8 +5,12 @@
 </div>
 
 
-<div align="center">
+
+
 ## 1. Descrição
+
+​    
+
 
 O **ConectaCRM** é um sistema de CRM desenvolvido para auxiliar no gerenciamento de oportunidades de venda. A aplicação permite cadastrar, acompanhar e atualizar negociações de forma prática e centralizada, ajudando no controle do fluxo comercial e na organização das informações do cliente.
 
