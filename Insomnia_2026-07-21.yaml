@@ -1,0 +1,622 @@
+type: spec.insomnia.rest/5.0
+schema_version: "5.1"
+name: ConectaCRM
+meta:
+  id: wrk_a3ae9365607345bebcb58f8545d619b7
+  created: 1784647512465
+  modified: 1784647512465
+  description: ""
+collection:
+  - name: Oportunidade
+    meta:
+      id: fld_c30f9e54de834e2c968455aea9da5cae
+      created: 1784291690737
+      modified: 1784647560845
+      sortKey: -1784291690737
+      description: ""
+    children:
+      - url: http://localhost:8080/oportunidades
+        name: Listar Todas as Oportunidades
+        meta:
+          id: req_18c1f61a0b2f4706ac4fd62d31104910
+          created: 1784291708853
+          modified: 1784648533159
+          isPrivate: false
+          description: ""
+          sortKey: -1784291708853
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/oportunidades/1
+        name: Procurar Oportunidades por ID
+        meta:
+          id: req_5bd19161266c470a8d1597283e1c1f02
+          created: 1784293670402
+          modified: 1784648883501
+          isPrivate: false
+          description: ""
+          sortKey: -1784291708846.75
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/oportunidades
+        name: Criar Oportunidades
+        meta:
+          id: req_bde33a0f3113490999c1c656b9ae9fe4
+          created: 1784300177124
+          modified: 1784648512438
+          isPrivate: false
+          description: ""
+          sortKey: -1784291708828
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"titulo": "Titulo 02",
+            	"status": 2,
+            	"nomeCliente": "Victor Pedro",
+            	"descricao": 	"Descricao do titulo 02",
+            	"valor": 1500	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/oportunidades/titulo/ti
+        name: Procurar Oportunidade por Título
+        meta:
+          id: req_ee72cf9118fd4148a7a3839e66675cd6
+          created: 1784312159770
+          modified: 1784648899601
+          isPrivate: false
+          description: ""
+          sortKey: -1784291708840.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/oportunidades
+        name: Atualizar Oportunidade
+        meta:
+          id: req_45b1bb6a19c84a749ee8bf1f9d26f32e
+          created: 1784322706571
+          modified: 1784648934770
+          isPrivate: false
+          description: ""
+          sortKey: -1784291708815.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id": 3,
+            	"titulo": "Titulo 03",
+            	"status": 2,
+            	"nomeCliente": "Kaue Dota",
+            	"descricao": 	"Descricao do titulo atualizado",
+            	"valor": 1500	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/oportunidades/4
+        name: Deletar Oportunidade por ID
+        meta:
+          id: req_2f4e22be88934b0e94e80d7ecb625c45
+          created: 1784323372226
+          modified: 1784648982997
+          isPrivate: false
+          description: ""
+          sortKey: -1784291708778
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.6.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_da9dbaca35f54fceb0288e00c06e9ae8
+    created: 1784291615875
+    modified: 1784291615875
+environments:
+  name: Base Environment
+  meta:
+    id: env_94f5645f7fce44dab11254bed00cfed6
+    created: 1784291615873
+    modified: 1784291615873
+    isPrivate: false
+spec:
+  contents:
+    - _id: wrk_3991f75dc1f24cad85d47957b822dbea
+      created: 1784291615868
+      modified: 1784291615868
+      isPrivate: false
+      description: ""
+      metaSortKey: 0
+      type: Workspace
+      _type: workspace
+      name: Blog Pessoal
+      parentId: ""
+      scope: design
+    - _id: env_901a1868c62d4fceec4397be5d6e979084f0d8d6
+      created: 1784291615873
+      modified: 1784291615873
+      isPrivate: false
+      description: ""
+      metaSortKey: 0
+      type: Environment
+      _type: environment
+      parentId: wrk_3991f75dc1f24cad85d47957b822dbea
+      name: Base Environment
+    - _id: jar_901a1868c62d4fceec4397be5d6e979084f0d8d6
+      created: 1784291615875
+      modified: 1784291615875
+      isPrivate: false
+      description: ""
+      metaSortKey: 0
+      type: CookieJar
+      _type: cookie_jar
+      name: Default Jar
+      parentId: wrk_3991f75dc1f24cad85d47957b822dbea
+    - _id: fld_f8016a0ce55e4c9e924d5ce5d31dd501
+      created: 1784291690737
+      modified: 1784291690737
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291690737
+      type: RequestGroup
+      _type: request_group
+      name: Postagem
+      parentId: wrk_3991f75dc1f24cad85d47957b822dbea
+      preRequestScript: ""
+      afterResponseScript: ""
+    - _id: req_dd06271df67040439567e77305fd9da7
+      created: 1784291708853
+      modified: 1784322753305
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708853
+      type: Request
+      _type: request
+      name: Listar Todas as Postagens
+      parentId: fld_f8016a0ce55e4c9e924d5ce5d31dd501
+      url: http://localhost:8080/postagens
+      method: GET
+      headers:
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_3858c73dab8340ce85df6b54f32fe064
+      created: 1784293670402
+      modified: 1784561886710
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708846.75
+      type: Request
+      _type: request
+      name: Procurar Postagem por ID
+      parentId: fld_f8016a0ce55e4c9e924d5ce5d31dd501
+      url: http://localhost:8080/postagens/1
+      method: GET
+      headers:
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_1b39021e38d84dd28da63a66722617f6
+      created: 1784300177124
+      modified: 1784576505150
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708828
+      type: Request
+      _type: request
+      name: Criar Postagem
+      parentId: fld_f8016a0ce55e4c9e924d5ce5d31dd501
+      url: http://localhost:8080/postagens
+      method: POST
+      body:
+        mimeType: application/json
+        text: |-
+          {
+          	"titulo": "Postagem nova 20/07",
+          	"texto": 	"Texto da postagem 04",
+          	"tema":{
+          		"id": 11
+          	}
+          }
+      headers:
+        - name: Content-Type
+          value: application/json
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_5b0e93dbc10544de91664d20abc43092
+      created: 1784312159770
+      modified: 1784561884629
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708840.5
+      type: Request
+      _type: request
+      name: Procurar Postagens por Título
+      parentId: fld_f8016a0ce55e4c9e924d5ce5d31dd501
+      url: http://localhost:8080/postagens/titulo/01
+      method: GET
+      headers:
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_28e461cc27074b5ab2cff710a216812c
+      created: 1784322706571
+      modified: 1784576536344
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708815.5
+      type: Request
+      _type: request
+      name: Atualizar Postagem
+      parentId: fld_f8016a0ce55e4c9e924d5ce5d31dd501
+      url: http://localhost:8080/postagens
+      method: PUT
+      body:
+        mimeType: application/json
+        text: |-
+          {
+          	"id": 3,
+          	"titulo": "Titulo exemplar",
+          	"texto": 	"Texto da postagem 03 - atualizado!",
+          		"tema":{
+          		"id": 11
+          		}
+          }
+      headers:
+        - name: Content-Type
+          value: application/json
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_723360726252419eab5ef1c85a4324b9
+      created: 1784323372226
+      modified: 1784323377715
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708778
+      type: Request
+      _type: request
+      name: Deletar Postagem por ID
+      parentId: fld_f8016a0ce55e4c9e924d5ce5d31dd501
+      url: http://localhost:8080/postagens/4
+      method: DELETE
+      headers:
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: fld_3416a86c70c448808d9ff4c83105e7e3
+      created: 1784558494101
+      modified: 1784558494101
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291690687
+      type: RequestGroup
+      _type: request_group
+      name: Tema
+      parentId: wrk_3991f75dc1f24cad85d47957b822dbea
+      preRequestScript: ""
+      afterResponseScript: ""
+    - _id: req_5793683c060a46f1915badbd47447e92
+      created: 1784558494101
+      modified: 1784561944114
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708653
+      type: Request
+      _type: request
+      name: Deletar Tema por ID
+      parentId: fld_3416a86c70c448808d9ff4c83105e7e3
+      url: http://localhost:8080/tema/5
+      method: DELETE
+      headers:
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_66729ca7b07d40e3a7b2c67596ebd676
+      created: 1784558494101
+      modified: 1784561808861
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708828
+      type: Request
+      _type: request
+      name: Criar Tema
+      parentId: fld_3416a86c70c448808d9ff4c83105e7e3
+      url: http://localhost:8080/tema
+      method: POST
+      body:
+        mimeType: application/json
+        text: |-
+          {
+          	"descricao": "Tema do Luci"
+          }
+      headers:
+        - name: Content-Type
+          value: application/json
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_94c9552e59c94ecaa0a3445ada1e32e9
+      created: 1784558494101
+      modified: 1784559675528
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708853
+      type: Request
+      _type: request
+      name: Listar Todas os Temas
+      parentId: fld_3416a86c70c448808d9ff4c83105e7e3
+      url: http://localhost:8080/tema
+      method: GET
+      headers:
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_97086dacabb246208d649e952665c7b0
+      created: 1784558494101
+      modified: 1784561977580
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708815.5
+      type: Request
+      _type: request
+      name: Atualizar Tema
+      parentId: fld_3416a86c70c448808d9ff4c83105e7e3
+      url: http://localhost:8080/tema
+      method: PUT
+      body:
+        mimeType: application/json
+        text: |-
+          
+          {
+          	"descricao": "Novo tema do ID 2",
+          	"id": 2
+          }
+      headers:
+        - name: Content-Type
+          value: application/json
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_d4c8d233b847409191be649c47ceac0c
+      created: 1784558494101
+      modified: 1784561962015
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708834.25
+      type: Request
+      _type: request
+      name: Procurar Tema por Descrição
+      parentId: fld_3416a86c70c448808d9ff4c83105e7e3
+      url: http://localhost:8080/tema/descricao/luci
+      method: GET
+      headers:
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: req_e76f823e2fbb45c4836a180e28616d89
+      created: 1784558494101
+      modified: 1784561875306
+      isPrivate: false
+      description: ""
+      metaSortKey: -1784291708840.5
+      type: Request
+      _type: request
+      name: Procurar Tema por ID
+      parentId: fld_3416a86c70c448808d9ff4c83105e7e3
+      url: http://localhost:8080/tema/1
+      method: GET
+      headers:
+        - name: User-Agent
+          value: insomnia/12.6.0
+          description: ""
+          disabled: false
+      preRequestScript: ""
+      settingDisableRenderRequestBody: false
+      settingEncodeUrl: true
+      settingFollowRedirects: global
+      settingSendCookies: true
+      settingStoreCookies: true
+      settingRebuildPath: true
+      afterResponseScript: ""
+      disableUserAgentHeader: false
+    - _id: spc_050a88597d074a0883479f996a4ec517
+      created: 1784291615871
+      modified: 1784558394164
+      isPrivate: false
+      description: ""
+      metaSortKey: 0
+      type: ApiSpec
+      name: Blog Pessoal
+      _type: api_spec
+      fileName: ""
+      contentType: json
+      contents: ""
+      parentId: wrk_3991f75dc1f24cad85d47957b822dbea
+  meta:
+    id: spc_46b223c538694c428be61bca2c33d38b
+    created: 1784647512477
+    modified: 1784647512481
