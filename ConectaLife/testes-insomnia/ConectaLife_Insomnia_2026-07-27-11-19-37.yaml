@@ -1,0 +1,512 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: ConectaLife
+meta:
+  id: wrk_1572ada32a0d4075a26658c41b2f937b
+  created: 1785156625886
+  modified: 1785156625886
+  description: ""
+collection:
+  - name: Clientes
+    meta:
+      id: fld_6908ee9be15244d5aea56c3b21d6172c
+      created: 1784291657906
+      modified: 1785157380994
+      sortKey: -1784291657906
+      description: ""
+    children:
+      - url: http://localhost:8080/clientes
+        name: Listar Todos Clientes
+        meta:
+          id: req_031f3a6fadc2409da23df452797856fa
+          created: 1784291688990
+          modified: 1785157277213
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076198
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/clientes/2
+        name: Procurar  Clientes por ID
+        meta:
+          id: req_37a30b3aefa5456884d99c77e6152d05
+          created: 1784293676324
+          modified: 1785158296932
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076148
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/clientes
+        name: Criar Cliente
+        meta:
+          id: req_679cd99f5d1c46778c2c75f9d511f694
+          created: 1784300076098
+          modified: 1785159522651
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076098
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome" : "Peter Parker", 
+            	"dataNascimento" : "1990-07-21",
+            	"cpf" : 99999999999,
+            	"email" : "spider@email.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/clientes/3
+        name: Atualizar Cliente
+        meta:
+          id: req_098bd3d6013448aca9ef342617187dc2
+          created: 1784301396215
+          modified: 1785159427162
+          isPrivate: false
+          description: ""
+          sortKey: -1784295882544
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome" : "Bruce Wayne", 
+            	"dataNascimento" : "1950-07-21",
+            	"cpf" : 88888888888,
+            	"email" : "bruce@email.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/clientes/2
+        name: Deletar Cliente
+        meta:
+          id: req_ca01e264446248878d69d188ee2dfaf9
+          created: 1784302037128
+          modified: 1785158279933
+          isPrivate: false
+          description: ""
+          sortKey: -1784291688915
+        method: DELETE
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/clientes/nome/peter
+        name: Procurar  Clientes por Nome
+        meta:
+          id: req_1448f3c611554359b40fb3fd559391ec
+          created: 1785159811140
+          modified: 1785161264768
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076135.5
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Apólice
+    meta:
+      id: fld_e60bb924e3374aa582b9ea71e6d738e1
+      created: 1784560506973
+      modified: 1785157078607
+      sortKey: -1784291657856
+      description: ""
+    children:
+      - url: http://localhost:8080/apolices
+        name: Listar Todas as Apólices
+        meta:
+          id: req_1e3cf370876d433ea63a6dd99533bc15
+          created: 1784560506973
+          modified: 1785159271177
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076198
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/apolices/1
+        name: Procurar Apólice por ID
+        meta:
+          id: req_5291191cdc4146aea6791814376ba2a2
+          created: 1784560506973
+          modified: 1785159248782
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076148
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/apolices
+        name: Criar Apólice
+        meta:
+          id: req_966f6826594f4905a72e0964c822ca42
+          created: 1784560506973
+          modified: 1785159569984
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076098
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "status": "ATIVO",
+              "valorCobertura": 159000.50,
+              "dataVigencia": "2027-12-31",
+              "cliente": {
+                "id": 3
+              },
+              "usuario": {
+                "id": 3
+              }
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/apolices/3
+        name: Atualizar Apolice
+        meta:
+          id: req_a77207760e2a456daeda8104430d03ff
+          created: 1784560506973
+          modified: 1785160993451
+          isPrivate: false
+          description: ""
+          sortKey: -1784299289806.625
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "numeroApolice": "AP-2026-875C2BAC",
+              "dataVigencia": "2027-12-31",
+              "status": "FINALIZADO",
+            	"valorCobertura": 200000.00,
+              "cliente": {
+                "id": 3
+              },
+              "usuario": {
+                "id": 3
+              }
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/apolices/1/validar-cobertura
+        name: Autenticar Apólice
+        meta:
+          id: req_ad8760a6651b45aca896057b2ae7d0b2
+          created: 1784820850690
+          modified: 1785157175761
+          isPrivate: false
+          description: ""
+          sortKey: -1784299551903.75
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "temCrimeHediondo": false
+            {
+              "id": 1,
+              "status": "ATIVO",
+              "valorCobertura": 200000.00,
+              "dataVigencia": "2029-12-31",
+              "cliente": {
+                "id": 1,
+                "nome": "João Silva",
+                "cpf": "123.456.789-00"
+              },
+              "usuario": {
+                "id": 1,
+                "email": "usuario@email.com"
+              }
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/apolices/3
+        name: Deletar Apólice
+        meta:
+          id: req_bb8181b3a6c24101a2cb40559b63f045
+          created: 1785157159633
+          modified: 1785161143733
+          isPrivate: false
+          description: ""
+          sortKey: -1784299027709.5
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/apolices/ativo
+        name: Procurar Apólice por STATUS
+        meta:
+          id: req_4e310bd216244fefa66be58daa15bbc2
+          created: 1785160013369
+          modified: 1785160138223
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076141.75
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/apolices/2/validar-cobertura
+        name: Validar Cobertura
+        meta:
+          id: req_29b323106637434087d58aa1e127d3ca
+          created: 1785161323463
+          modified: 1785161677464
+          isPrivate: false
+          description: ""
+          sortKey: -1784299814000.875
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+
+              "temCrimeHediondo": false
+
+             
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Usuários
+    meta:
+      id: fld_c817cd94aa0545d58c6ea29e87074300
+      created: 1785158430000
+      modified: 1785158430000
+      sortKey: -1784291657881
+      description: ""
+    children:
+      - url: http://localhost:8080/usuarios
+        name: Criar Usuário
+        meta:
+          id: req_466cab8c884d4b72bfe353da83c367bd
+          created: 1785158430000
+          modified: 1785158772090
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076098
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome" : "everly", 
+            	"email" : "everly@email.com",
+            	"senha" : 856822
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuarios
+        name: Listar Todos Usuários
+        meta:
+          id: req_53f6a3936cf44897b73e8c4024ae4fac
+          created: 1785158430000
+          modified: 1785158783510
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076198
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuarios/1
+        name: Atualizar Usuário
+        meta:
+          id: req_92fe43a0899248caa452aa5d6abaaa2f
+          created: 1785158430000
+          modified: 1785158835560
+          isPrivate: false
+          description: ""
+          sortKey: -1784295882544
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome" : "Joel", 
+            	"email" : "joel@email.com",
+            	"senha" : 856555
+            	
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuarios/3
+        name: Procurar  Usuários por ID
+        meta:
+          id: req_de8bc4a526834b90a0aa7d698d8177f7
+          created: 1785158430000
+          modified: 1785158793583
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076148
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuarios/email/joe
+        name: Procurar  Usuários por EMAIL
+        meta:
+          id: req_6eb622fc535c47779fc8a1f5ec1da8ef
+          created: 1785161180585
+          modified: 1785161228339
+          isPrivate: false
+          description: ""
+          sortKey: -1784300076144.875
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_431f5af16c234a91a8e19c0fa38b474e
+    created: 1784291606378
+    modified: 1784291606378
+environments:
+  name: Base Environment
+  meta:
+    id: env_5d798062515b4c4a83cad51f47e09a0f
+    created: 1784291606374
+    modified: 1784291606374
+    isPrivate: false
