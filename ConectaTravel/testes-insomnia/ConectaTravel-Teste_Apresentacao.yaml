@@ -1,0 +1,513 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: ConectaTravel
+meta:
+  id: wrk_751fbe7a6ec64f6784a6e82a83a0a510
+  created: 1785764564093
+  modified: 1785764564093
+  description: ""
+collection:
+  - name: Render
+    meta:
+      id: fld_e166b5afc0c74af981f1483e153149b9
+      created: 1785775623398
+      modified: 1785775623398
+      sortKey: -1785775623398
+      description: ""
+    children:
+      - name: Clientes
+        meta:
+          id: fld_15e01f160de849c79537af81439db9f2
+          created: 1784291657906
+          modified: 1785775627252
+          sortKey: -1785775627170
+          description: ""
+        children:
+          - url: https://conectatravel.onrender.com/clientes
+            name: Listar Todos Clientes
+            meta:
+              id: req_270da553f55d47ae9e5820fcf22a52dd
+              created: 1784291688990
+              modified: 1785774474761
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076198
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/clientes/1
+            name: Procurar  Clientes por ID
+            meta:
+              id: req_f251e26b7a144982947ab828ca2a0a44
+              created: 1784293676324
+              modified: 1785774481230
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076148
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/clientes
+            name: Criar Cliente
+            meta:
+              id: req_4930c33ed1714450a7096f5dea3109dc
+              created: 1784300076098
+              modified: 1785774493542
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076098
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "nome": "Bruce Wayne",
+                  "dataNascimento": "1960-05-10",
+                  "cpfCnpj": "12345678900",
+                  "email": "batman@email.com",
+                  "empresaTech": "Wayne Enterprises"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/clientes
+            name: Atualizar Cliente
+            meta:
+              id: req_a4c4302d66064f4696d9fac49598fc98
+              created: 1784301396215
+              modified: 1785775083385
+              isPrivate: false
+              description: ""
+              sortKey: -1784295882544
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"id": 2,
+                  "nome": "Bruce Wayne",
+                  "dataNascimento": "1960-05-10",
+                  "cpfCnpj": "12345678900",
+                  "email": "bruce@email.com",
+                  "empresaTech": "Wayne Enterprises"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/clientes/1
+            name: Deletar Cliente
+            meta:
+              id: req_1e187b8a2ce24eec899f29abdc92408a
+              created: 1784302037128
+              modified: 1785775074576
+              isPrivate: false
+              description: ""
+              sortKey: -1784291688915
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/clientes/nome/bruce
+            name: Procurar  Clientes por Nome
+            meta:
+              id: req_912263f303584955a345398bde8838e3
+              created: 1785159811140
+              modified: 1785774488098
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076135.5
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+        headers:
+          - name: Authorization
+            value: "{% response 'body', 'req_7fb937427ea54942bfa83bf19376d427',
+              'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+            description: ""
+            disabled: false
+      - name: Apólice
+        meta:
+          id: fld_f35098cfafa048c78e42037d26123f10
+          created: 1784560506973
+          modified: 1785775639418
+          sortKey: -1785775627370
+          description: ""
+        children:
+          - url: https://conectatravel.onrender.com/apolices
+            name: Listar Todas as Apólices
+            meta:
+              id: req_22b3894af961424491dca1f8501f4fe2
+              created: 1784560506973
+              modified: 1785774530491
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076198
+            method: GET
+            headers:
+              - name: Authorization
+                value: ""
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/apolices/2
+            name: Procurar Apólice por ID
+            meta:
+              id: req_b3b71157841a449abaee7b5a393a3970
+              created: 1784560506973
+              modified: 1785774795951
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076148
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/apolices
+            name: Atualizar Apolice
+            meta:
+              id: req_dda8ae281a2c4d0aaba3e22816700306
+              created: 1784560506973
+              modified: 1785775523150
+              isPrivate: false
+              description: ""
+              sortKey: -1784299289806.625
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "id": 5,
+                  "numeroApolice": "AP-2026-99881",
+                  "destino": "Paris - França",
+                  "dataInicio": "2026-09-01",
+                  "dataFim": "2026-09-20",
+                  "valorPremio": 1250.00,
+                  "status": "Ativa",
+                  "coberturas": [
+                    "Despesas Médicas e Hospitalares",
+                    "Extravio de Bagagem",
+                    "Cancelamento de Viagem"
+                  ],
+                  "usuario": {
+                    "id": 2
+                  },
+                  "cliente": {
+                    "id": 2
+                  }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/apolices
+            name: Criar Apólice
+            meta:
+              id: req_e7f1349aa45b48f9872ee2caac7d9fda
+              created: 1784560506973
+              modified: 1785774771575
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076098
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "numeroApolice": "APO-20260803-003",
+                  "destino": "Lisboa",
+                  "dataInicio": "2026-08-10",
+                  "dataFim": "2026-08-20",
+                  "valorPremio": 1500.00,
+                  "status": "ATIVA",
+                  "usuario": { "id": 2 },
+                  "cliente": { "id": 2 }
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/apolices/2
+            name: Deletar Apólice
+            meta:
+              id: req_a8a42d9870a447159f5a063e4c5dd78e
+              created: 1785157159633
+              modified: 1785774973866
+              isPrivate: false
+              description: ""
+              sortKey: -1784299027709.5
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+        headers:
+          - name: Authorization
+            value: "{% response 'body', 'req_7fb937427ea54942bfa83bf19376d427',
+              'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+            description: ""
+            disabled: false
+      - name: Usuários
+        meta:
+          id: fld_101d94b9ac344b198dc792016ef4f20c
+          created: 1785158430000
+          modified: 1785775631397
+          sortKey: -1785775627270
+          description: ""
+        children:
+          - url: https://conectatravel.onrender.com/usuarios/all
+            name: Listar Todos Usuários
+            meta:
+              id: req_451e944ad60e4fa7a607e373007a9077
+              created: 1785158430000
+              modified: 1785774437717
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076198
+            method: GET
+            headers:
+              - name: Authorization
+                value: "{% response 'body', 'req_7fb937427ea54942bfa83bf19376d427',
+                  'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/usuarios/atualizar
+            name: Atualizar Usuário
+            meta:
+              id: req_94d0a10684894ef1a80332e1f64c3e1e
+              created: 1785158430000
+              modified: 1785774467332
+              isPrivate: false
+              description: ""
+              sortKey: -1784295882544
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"id":1,
+                	"nome" : "Everly", 
+                	"usuario" : "Everly@email.com",
+                	"senha" : "856822",
+                	"cargo": "Desenvolvedora"
+
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: Authorization
+                value: "{% response 'body', 'req_7fb937427ea54942bfa83bf19376d427',
+                  'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/usuarios/1
+            name: Procurar  Usuários por ID
+            meta:
+              id: req_ca4f468a15d249e0a8fef31aa085e06d
+              created: 1785158430000
+              modified: 1785774442606
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076148
+            method: GET
+            headers:
+              - name: Authorization
+                value: "{% response 'body', 'req_7fb937427ea54942bfa83bf19376d427',
+                  'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/usuarios/cadastrar
+            name: Criar Usuário
+            meta:
+              id: req_eb8e8fc4b9d1425eb23bd7093c0fee37
+              created: 1785158430000
+              modified: 1785774343824
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076098
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome" : "Root", 
+                	"usuario" : "root@root.com.br",
+                	"senha" : "rootroot",
+                	"cargo": "Desenvolvedor"
+                	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/usuarios/nome/sara
+            name: Procurar  Usuários por Nome
+            meta:
+              id: req_de377a318f2e44b5b7f60a8be2891596
+              created: 1785161180585
+              modified: 1785774456990
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076144.875
+            method: GET
+            headers:
+              - name: Authorization
+                value: "{% response 'body', 'req_7fb937427ea54942bfa83bf19376d427',
+                  'b64::JC50b2tlbg==::46b', 'never', 60 %}"
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: https://conectatravel.onrender.com/usuarios/logar
+            name: Autenticar Usuário
+            meta:
+              id: req_7fb937427ea54942bfa83bf19376d427
+              created: 1785530296706
+              modified: 1785774392304
+              isPrivate: false
+              description: ""
+              sortKey: -1784300076048
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"usuario" : "root@root.com.br",
+                	"senha" : "rootroot"
+                	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_aae93f1ff393487786ab380a040ab2b4
+    created: 1784291606378
+    modified: 1784291606378
+environments:
+  name: Base Environment
+  meta:
+    id: env_58e1d52e14a8484894a42fb458c20b38
+    created: 1784291606374
+    modified: 1784291606374
+    isPrivate: false
