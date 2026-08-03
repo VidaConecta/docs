@@ -3,7 +3,7 @@
 <div align="center">
    <img src="https://ik.imagekit.io/5eywr3ioq/Imagens%20Projeto%20Integrador/ConectaTravel.png" title="ConectaLife" />
 </div>
-
+ 
 # ✈️ ConectaTravel - Sistema de Gerenciamento de Seguro Viagem Tech
 
 O **ConectaTravel** é um sistema de gerenciamento de seguro viagem voltado especificamente para estudantes de tecnologia, pessoas desenvolvedoras e empresas do setor tech. A aplicação permite cadastrar, consultar, atualizar e excluir clientes e apólices de viagem, além de gerenciar os usuários responsáveis pelos registros, centralizando as informações e tornando os processos de cotação e emissão mais organizados e eficientes.
