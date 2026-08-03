@@ -193,7 +193,7 @@ http://localhost:8080
 
  
 
-* 👨‍💻 **Everly Rosendo** - [LinkedIn](https://linkedin.com/in/everly-rosendo) | [GitHub](https://github.com/Dev-Everly)
+* 👨‍💻 **Everly Rosendo** - [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/sara-hurtado-cortes](https://linkedin.com/in/everly-rosendo)/) | [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/SaraCarlenis](https://github.com/Dev-Everly))
 * 👩‍💻 **Djalma Gomes** - [LinkedIn](https://linkedin.com/in/perfil) | [GitHub](https://github.com/DjSoul01000)
 * 👨‍💻 **Joel Ramalho Filho ** - [LinkedIn](https://www.linkedin.com/in/joel-cunha-ramalho-filho ) | [GitHub](https://github.com/JoelRamalhoF)
 * 👨‍💻 **Kauê Dota** - [LinkedIn](https://www.linkedin.com/in/kaue-dota/) | [GitHub](https://github.com/kauedota)
